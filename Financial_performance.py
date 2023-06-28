@@ -1,7 +1,7 @@
 import os
 import csv
 # CSV file directory to enable calling 
-performance_csv=os.path.join("..","Pybank","Resources","budget_data.csv")
+performance_csv=os.path.join("..","Python-challenge","budget_data.csv")
 
 # This function wold do all the operations needed of analysis.
 def financial_results(results):

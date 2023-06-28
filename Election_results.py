@@ -1,7 +1,7 @@
 import os
 import csv
 # CSV file directory to enable reading 
-election_csv=os.path.join("..","Pypoll","Resources","election_data.csv")
+election_csv=os.path.join("..","Python-challenge","election_data.csv")
 
 # This function would do all the operations needed of analysis.
 def get_elect_results(results):
@@ -37,7 +37,7 @@ def get_elect_results(results):
     #Print the results in the terminal
     print("Elections Results\n","Total Votes: "+str(len(rows))+"\n","Charles Casper Stockham "+str(round(Percent_Charles*100,2))+"% ("+str(Charles_votes)+")\n","Diana DeGette: "+str(round(Percent_Diana*100,2))+"% ("+str(Dianas_votes)+")\n","Raymon Anthony Doane: "+str(round(Percent_Raymon*100,2))+"% ("+str(Raymon_votes)+")\n","The winner is: "+str(winner))     
     #Print the results in a new text file
-    with open("Elections Results","w") as elec_results:
+    with open("Elections_Results.txt","w") as elec_results:
         elec_results.write("Elections Results\n")
         elec_results.write("Total Votes: "+str(len(rows))+"\n")
         elec_results.write("Charles Casper Stockham "+str(round(Percent_Charles*100,2))+"% ("+str(Charles_votes)+")\n")
